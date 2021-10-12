@@ -16,8 +16,8 @@ class TableComponent extends React.Component {
                 <DataGridPro
                     rows={this.props.rows}
                     columns={this.props.columns}
+                    pagination
                     pageSize={10}
-                    rowsPerPageOptions={[10]}
                     onRowEditStart={this.handleRowEditStart}                   
                 />
             </div>
