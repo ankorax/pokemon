@@ -24,11 +24,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
   </head>
-  <body>
+  <body class="container">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <header class="jumbotron bg-danger">
+      <div class="container">
+          <div class="row row-header">
+              <div class="col-sm-5">
+                <img src="pokemon-logo.png" class="img-fluid">
+              </div>
+              <div class="col-sm-7">                            
+                <img src="cover-pokemon-preview.png" class="img-fluid">              
+              </div>
+          </div>
+      </div>
+    </header>
+    <div class="container" id="root"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +52,8 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
